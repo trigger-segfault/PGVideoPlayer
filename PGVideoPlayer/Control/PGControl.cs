@@ -343,7 +343,7 @@ namespace PGVideoPlayer.Control {
 					dialog.Filter += ";";
 				dialog.Filter += "*" + SupportedVideoFormats[i];
 			}
-			dialog.FilterIndex = 0;
+			dialog.Filter += "|All Files|*.*";
 			var result = dialog.ShowDialog();
 			if (result.HasValue && result.Value) {
 				OpenVideo(dialog.FileName);

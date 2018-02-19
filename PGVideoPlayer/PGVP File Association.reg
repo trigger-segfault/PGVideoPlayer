@@ -1,0 +1,171 @@
+Windows Registry Editor Version 5.00
+
+## Setup Pixel Graphics Video Player File Association ##
+; OS: Windows 7
+; Change: After Restart
+; Created by: Robert Jordan
+; Published:  2 Feb 2018
+
+; Notes: This will add "Open With" file associations for Pixel Graphics Video Player.
+;        The paths for the icons and executables will need to be changed.
+;        Paths that need to be changed are marked with "### CHANGE THIS PATH ###".
+;        The new paths should be constant.
+
+;;======== FILE EXTENSIONS ===================;;
+
+# AVI
+; Classes Root
+[HKEY_CLASSES_ROOT\.avi\OpenWithProgIds]
+"PGVideoPlayer"=""
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.avi\OpenWithProgIds]
+"PGVideoPlayer"=""
+
+;;--------------------------------;;
+
+# MP4
+; Classes Root
+[HKEY_CLASSES_ROOT\.mp4\OpenWithProgIds]
+"PGVideoPlayer"=""
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mp4\OpenWithProgIds]
+"PGVideoPlayer"=""
+
+;;--------------------------------;;
+
+# MPEG
+; Classes Root
+[HKEY_CLASSES_ROOT\.mpg\OpenWithProgIds]
+"PGVideoPlayer"=""
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpg\OpenWithProgIds]
+"PGVideoPlayer"=""
+
+; Classes Root
+[HKEY_CLASSES_ROOT\.mpeg\OpenWithProgIds]
+"PGVideoPlayer"=""
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mpeg\OpenWithProgIds]
+"PGVideoPlayer"=""
+
+;;--------------------------------;;
+
+# MOV
+; Classes Root
+[HKEY_CLASSES_ROOT\.mov\OpenWithProgIds]
+"PGVideoPlayer"=""
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.mov\OpenWithProgIds]
+"PGVideoPlayer"=""
+
+;;--------------------------------;;
+
+# FLV
+; Classes Root
+[HKEY_CLASSES_ROOT\.flv\OpenWithProgIds]
+"PGVideoPlayer"=""
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.flv\OpenWithProgIds]
+"PGVideoPlayer"=""
+
+;;--------------------------------;;
+
+# WEBM
+; Classes Root
+[HKEY_CLASSES_ROOT\.webm\OpenWithProgIds]
+"PGVideoPlayer"=""
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.webm\OpenWithProgIds]
+"PGVideoPlayer"=""
+
+;;======== PROGRAM IDENTIFIER ================;;
+
+; Classes Root
+[HKEY_CLASSES_ROOT\PGVideoPlayer]
+@="Video File"
+[HKEY_CLASSES_ROOT\PGVideoPlayer\DefaultIcon]
+### CHANGE THIS PATH ###
+@="C:\\Programs\\Tools\\PGVideoPlayer\\VideoFile.ico"
+[HKEY_CLASSES_ROOT\PGVideoPlayer\shell\open]
+@="Play"
+[HKEY_CLASSES_ROOT\PGVideoPlayer\shell\open\command]
+### CHANGE THIS PATH ###
+@="\"C:\\Programs\\Tools\\PGVideoPlayer\\PGVideoPlayer.exe\" \"%1\""
+
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PGVideoPlayer]
+@="Video File"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PGVideoPlayer\DefaultIcon]
+### CHANGE THIS PATH ###
+@="C:\\Programs\\Tools\\PGVideoPlayer\\VideoFile.ico"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PGVideoPlayer\shell\open]
+@="Play"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\PGVideoPlayer\shell\open\command]
+### CHANGE THIS PATH ###
+@="\"C:\\Programs\\Tools\\PGVideoPlayer\\PGVideoPlayer.exe\" \"%1\""
+
+;;======== APPLICATION IDENTIFIER ============;;
+
+; App Paths
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\PGVideoPlayer.exe]
+### CHANGE THIS PATH ###
+@="C:\\Programs\\Tools\\PGVideoPlayer\\PGVideoPlayer.exe"
+
+; Classes Root
+[HKEY_CLASSES_ROOT\Applications\PGVideoPlayer.exe]
+@="PGVideoPlayer"
+"FriendlyAppName"="Pixel Graphics Video Player"
+[-HKEY_CLASSES_ROOT\Applications\PGVideoPlayer.exe\DefaultIcon]
+[-HKEY_CLASSES_ROOT\Applications\PGVideoPlayer.exe\TaskbarGroupIcon]
+[HKEY_CLASSES_ROOT\Applications\PGVideoPlayer.exe\shell\open]
+@="Play"
+"FriendlyAppName"="Pixel Graphics Video Player"
+[HKEY_CLASSES_ROOT\Applications\PGVideoPlayer.exe\shell\open\command]
+### CHANGE THIS PATH ###
+@="\"C:\\Programs\\Tools\\PGVideoPlayer\\PGVideoPlayer.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\Applications\PGVideoPlayer.exe\SupportedTypes]
+".avi"=""
+".mp4"=""
+".mpg"=""
+".mpeg"=""
+".mov"=""
+".flv"=""
+".avi"=""
+
+; Local Machine
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\PGVideoPlayer.exe]
+@="PGVideoPlayer"
+"FriendlyAppName"="Pixel Graphics Video Player"
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\PGVideoPlayer.exe\DefaultIcon]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\PGVideoPlayer.exe\TaskbarGroupIcon]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\PGVideoPlayer.exe\shell\open]
+@="Play"
+"FriendlyAppName"="Pixel Graphics Video Player"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\PGVideoPlayer.exe\shell\open\command]
+### CHANGE THIS PATH ###
+@="\"C:\\Programs\\Tools\\PGVideoPlayer\\PGVideoPlayer.exe\" \"%1\""
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\PGVideoPlayer.exe\SupportedTypes]
+".avi"=""
+".mp4"=""
+".mpg"=""
+".mpeg"=""
+".mov"=""
+".flv"=""
+".avi"=""
+
+;;======== CAPABILITIES ======================;;
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\PGVideoPlayer\Capabilities]
+"ApplicationName"="PGVideoPlayer"
+"ApplicationDescription"="A video player designed for lossless video formats with pixel graphics."
+[HKEY_LOCAL_MACHINE\SOFTWARE\PGVideoPlayer\Capabilities\FileAssociations]
+".avi"="PGVideoPlayer"
+".mp4"="PGVideoPlayer"
+".mpg"="PGVideoPlayer"
+".mpeg"="PGVideoPlayer"
+".mov"="PGVideoPlayer"
+".flv"="PGVideoPlayer"
+".avi"="PGVideoPlayer"
+[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+"PGVideoPlayer"="SOFTWARE\PGVideoPlayer\Capabilities"
+

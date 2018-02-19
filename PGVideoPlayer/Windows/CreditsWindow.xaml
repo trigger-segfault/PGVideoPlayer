@@ -41,7 +41,7 @@
                 </Rectangle.Fill>
             </Rectangle>
 
-            <TextBlock TextWrapping="Wrap" Padding="5"><Run Text="Program icon from The Legend of Zelda - Oracle of Ages."/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Padding="5"><Run Text="Program icon from The Legend of Zelda: Oracle of Ages."/></TextBlock>
             <Rectangle Height="1" Margin="20,5">
                 <Rectangle.Fill>
                     <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
