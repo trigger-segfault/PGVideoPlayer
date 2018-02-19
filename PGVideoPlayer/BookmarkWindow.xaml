@@ -1,0 +1,38 @@
+﻿<Window x:Class="PGVideoPlayer.BookmarkWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PGVideoPlayer.Controls"
+        xmlns:cmd="clr-namespace:PGVideoPlayer"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Bookmarked Frames" Height="300" Width="200" WindowStyle="ToolWindow" Background="#FFF0F0F0" ShowInTaskbar="False" WindowStartupLocation="Manual" Icon="Resources/Icons/BookmarkList.png" SnapsToDevicePixels="True" UseLayoutRounding="True" MinWidth="200" PreviewMouseDown="OnPreviewMouseDown" Closing="OnWindowClosing" MinHeight="160">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/PGVideoPlayer;component/Themes/ExpressionDark.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/PGVideoPlayer;component/Themes/ExpressionDarkDefaultStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top" ToolBarTray.IsLocked="True" Height="30">
+            <local:ImageButton Content="Bookmark" Source="Resources/Icons/BookmarkAdd.png" ToolTip="Bookmark Frame (Ctrl+B)" Command="cmd:Commands.BookmarkFrame" Focusable="False" IsTabStop="False" Margin="4,0,0,0"/>
+            <Separator/>
+            <local:ImageButton Content="Clear" Source="Resources/Icons/BookmarkClear.png" ToolTip="Clear Bookmarks" Command="cmd:Commands.ClearBookmarks" Focusable="False" IsTabStop="False"/>
+            <Separator/>
+            <local:ImageToggleButton x:Name="buttonBookmarkTimes" Source="Resources/Icons/BookmarkTimes.png" ToolTip="Toggle Time Advances" Command="cmd:Commands.BookmarkTimes"/>
+        </ToolBar>
+        <local:ListViewBasicNavigation x:Name="listViewBookmarks" BorderThickness="0" SelectionChanged="OnBookmarkSelectionChanged"
+                  HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" KeyboardNavigation.DirectionalNavigation="None">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Setter Property="KeyboardNavigation.DirectionalNavigation" Value="None"/>
+                    <EventSetter Event="PreviewMouseDown" Handler="OnBookmarkItemPreviewMouseDown"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+        </local:ListViewBasicNavigation>
+    </DockPanel>
+</Window>

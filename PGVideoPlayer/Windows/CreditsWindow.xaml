@@ -1,0 +1,61 @@
+﻿<Window x:Class="PGVideoPlayer.Windows.CreditsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Credits" Background="#FF595959" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" SnapsToDevicePixels="True" UseLayoutRounding="True" Icon="/Resources/Icons/Credits.png" SizeToContent="WidthAndHeight" Foreground="White">
+    
+    <Grid x:Name="clientArea" Width="364" Height="234">
+        <StackPanel Margin="10,10,10,37">
+            <TextBlock TextWrapping="Wrap" Padding="5">
+                Media Player capabilities thanks to <Hyperlink Foreground="#FF75BAFF" NavigateUri="https://github.com/unosquare/ffmediaelement" RequestNavigate="OnRequestNavigate" Focusable="False">FFME</Hyperlink> and <Hyperlink Foreground="#FF75BAFF" NavigateUri="https://www.ffmpeg.org/" RequestNavigate="OnRequestNavigate" Focusable="False">FFmpeg</Hyperlink>.
+            </TextBlock>
+            <Rectangle Height="1" Margin="20,5">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#FFA0A0A0" Offset="0"/>
+                        <GradientStop Color="#00A0A0A0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <TextBlock TextWrapping="Wrap" Padding="5">
+                Frame capture capabilities thanks to <Hyperlink Foreground="#FF75BAFF" NavigateUri="https://www.nuget.org/packages/Accord.Video.FFMPEG/" RequestNavigate="OnRequestNavigate" Focusable="False">Accord.Video.FFmpeg</Hyperlink>.
+            </TextBlock>
+            <Rectangle Height="1" Margin="20,5">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#FFA0A0A0" Offset="0"/>
+                        <GradientStop Color="#00A0A0A0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <TextBlock TextWrapping="Wrap" Padding="5">
+                Most icons from or modified from <Hyperlink Foreground="#FF75BAFF" NavigateUri="http://p.yusukekamiyamane.com/" RequestNavigate="OnRequestNavigate" Focusable="False">Fugue Icon Pack</Hyperlink>.
+            </TextBlock>
+            <Rectangle Height="1" Margin="20,5">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#FFA0A0A0" Offset="0"/>
+                        <GradientStop Color="#00A0A0A0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <TextBlock TextWrapping="Wrap" Padding="5"><Run Text="Program icon from The Legend of Zelda - Oracle of Ages."/></TextBlock>
+            <Rectangle Height="1" Margin="20,5">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                        <GradientStop Color="#FFA0A0A0" Offset="0"/>
+                        <GradientStop Color="#00A0A0A0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <TextBlock TextWrapping="Wrap" Padding="5">
+                Window Theme: <Hyperlink Foreground="#FF75BAFF" NavigateUri="https://www.nuget.org/packages/Wpf.Themes.ExpressionDark/" RequestNavigate="OnRequestNavigate" Focusable="False">ExpressionDark</Hyperlink>.
+            </TextBlock>
+        </StackPanel>
+
+        <Button Content="Close" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="80" IsDefault="True" IsCancel="True" Height="22"/>
+    </Grid>
+</Window>
