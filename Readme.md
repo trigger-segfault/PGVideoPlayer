@@ -1,5 +1,10 @@
 # Pixel Graphics Video Player
 
+[![Latest Release](https://img.shields.io/github/release/trigger-death/PGVideoPlayer.svg?style=flat&label=version)](https://github.com/trigger-death/PGVideoPlayer/releases/latest)
+[![Latest Release Date](https://img.shields.io/github/release-date-pre/trigger-death/PGVideoPlayer.svg?style=flat&label=released)](https://github.com/trigger-death/PGVideoPlayer/releases/latest)
+[![Total Downloads](https://img.shields.io/github/downloads/trigger-death/PGVideoPlayer/total.svg?style=flat)](https://github.com/trigger-death/PGVideoPlayer/releases)
+[![Creation Date](https://img.shields.io/badge/created-february%202018-A642FF.svg?style=flat)](https://github.com/trigger-death/PGVideoPlayer/commit/66206182e4cd825f8258aa9313b35ac49e6a66bf)
+
 A video player designed solely for navigating lossless video formats with pixel graphics in mind. PGVP allows you to navigate videos frame-by-frame and bookmark specific frames to keep track of timing between events. Frames with differences can also be located in either direction and the differences highlighted. Comes with an optional waveform visualizer to help locate the start of a playing sound. This tool was designer for the [Zelda Oracle Engine](https://github.com/trigger-death/ZeldaOracle) project for determining game mechanics with precision.
 
 [![Window Preview](https://i.imgur.com/3CrXaF6.png)](https://i.imgur.com/UdDqCXg.gifv)
